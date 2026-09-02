@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pedro Francisco, PharmD | Business Development</title>
+  <meta name="description" content="Pedro Francisco, PharmD — Business Development Manager at Astrum CRO, focused on clinical research and early clinical development.">
+
+  <style>
+    :root {
+      --astrum-blue: #65CAE4;
+      --astrum-blue-light: #E0F4FA;
+      --charcoal: #242424;
+      --gray: #C7C7C7;
+      --light-gray: #F3F3F3;
+      --white: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Calibri, "Segoe UI", Arial, sans-serif;
+      color: var(--charcoal);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---------- HEADER ---------- */
+
+    header {
+      padding: 28px 24px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: var(--charcoal);
+    }
+
+    .logo span {
+      color: var(--astrum-blue);
+    }
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+      max-width: 720px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 55px 24px 70px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      color: #336572;
+      background: var(--astrum-blue-light);
+      padding: 7px 15px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      margin-bottom: 22px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 8vw, 58px);
+      line-height: 1.05;
+      font-weight: 700;
+      letter-spacing: -1.5px;
+      margin-bottom: 14px;
+    }
+
+    .degree {
+      color: #336572;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 7px;
+    }
+
+    .role {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .company {
+      color: #4C98AB;
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .intro {
+      max-width: 570px;
+      margin: 28px auto 34px;
+      font-size: 17px;
+      color: #555;
+    }
+
+    /* ---------- BUTTONS ---------- */
+
+    .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+      max-width: 390px;
+      margin: 0 auto;
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 13px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 600;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .primary {
+      background: var(--charcoal);
+      color: var(--white);
+    }
+
+    .secondary {
+      border: 1px solid var(--gray);
+      color: var(--charcoal);
+      background: var(--white);
+    }
+
+    .secondary:hover {
+      border-color: var(--astrum-blue);
+    }
+
+    .icon {
+      margin-right: 9px;
+      font-size: 17px;
+    }
+
+    /* ---------- SECTION ---------- */
+
+    section {
+      padding: 70px 24px;
+    }
+
+    .section-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      color: #4C98AB;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: 30px;
+      line-height: 1.2;
+      margin-bottom: 28px;
+    }
+
+    /* ---------- FOCUS ---------- */
+
+    .focus {
+      background: var(--light-gray);
+    }
+
+    .focus-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .focus-item {
+      background: var(--white);
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid var(--astrum-blue);
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    /* ---------- ABOUT ---------- */
+
+    .about-text {
+      font-size: 17px;
+      color: #505050;
+      max-width: 650px;
+    }
+
+    /* ---------- ASTRUM ---------- */
+
+    .astrum {
+      background: var(--astrum-blue-light);
+      text-align: center;
+    }
+
+    .astrum .section-inner {
+      max-width: 600px;
+    }
+
+    .astrum p {
+      font-size: 17px;
+      color: #40545A;
+      margin-bottom: 25px;
+    }
+
+    .astrum-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 25px;
+      background: var(--charcoal);
+      color: var(--white);
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: transform 0.15s ease;
+    }
+
+    .astrum-button:hover {
+      transform: translateY(-1px);
+    }
+
+    /* ---------- FOOTER ---------- */
+
+    footer {
+      margin-top: auto;
+      padding: 30px 24px;
+      text-align: center;
+      color: #888;
+      font-size: 13px;
+    }
+
+    /* ---------- MOBILE ---------- */
+
+    @media (max-width: 520px) {
+
+      header {
+        padding-top: 22px;
+      }
+
+      .hero {
+        padding-top: 40px;
+        padding-bottom: 55px;
+      }
+
+      .focus-grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 20px;
+      }
+
+      h2 {
+        font-size: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <header>
+      <div class="logo">ASTRUM<span>.</span></div>
+    </header>
+
+    <main>
+
+      <!-- HERO -->
+
+      <section class="hero">
+
+        <div class="eyebrow">
+          Clinical Research &amp; Business Development
+        </div>
+
+        <h1>Pedro Francisco</h1>
+
+        <div class="degree">PharmD</div>
+
+        <div class="role">
+          Business Development Manager
+        </div>
+
+        <div class="company">
+          Astrum CRO
+        </div>
+
+        <p class="intro">
+          Connecting pharmaceutical and biotechnology companies
+          with clinical research capabilities across Europe.
+        </p>
+
+        <div class="actions">
+
+          <a class="button primary"
+             href="mailto:pedro.francisco@astrucro.com">
+            <span class="icon">✉</span>
+            Email me
+          </a>
+
+          <a class="button secondary"
+             href="https://www.linkedin.com/in/pedrofranciscobrf"
+             target="_blank"
+             rel="noopener">
+            <span class="icon">in</span>
+            Connect on LinkedIn
+          </a>
+
+          <a class="button secondary"
+             href="https://astrumcro.com"
+             target="_blank"
+             rel="noopener">
+            <span class="icon">↗</span>
+            Visit Astrum CRO
+          </a>
+
+        </div>
+
+      </section>
+
+
+      <!-- PROFESSIONAL FOCUS -->
+
+      <section class="focus">
+
+        <div class="section-inner">
+
+          <div class="section-label">
+            What I work with
+          </div>
+
+          <h2>
+            Clinical Research &amp;<br>
+            Early Development
+          </h2>
+
+          <div class="focus-grid">
+
+            <div class="focus-item">
+              Phase I Clinical Trials
+            </div>
+
+            <div class="focus-item">
+              Early Clinical Development
+            </div>
+
+            <div class="focus-item">
+              Pharmacokinetics &amp; PK/PD
+            </div>
+
+            <div class="focus-item">
+              Bioavailability &amp; Bioequivalence
+            </div>
+
+            <div class="focus-item">
+              Drug–Drug Interaction Studies
+            </div>
+
+            <div class="focus-item">
+              Special Population Studies
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- ABOUT -->
+
+      <section>
+
+        <div class="section-inner">
+
+          <div class="section-label">
+            About
+          </div>
+
+          <h2>
+            Building partnerships<br>
+            in clinical research.
+          </h2>
+
+          <p class="about-text">
+            I am a PharmD and Business Development Manager at
+            Astrum CRO, focused on building partnerships with
+            pharmaceutical and biotechnology companies and
+            connecting development programs with the right
+            clinical research capabilities.
+          </p>
+
+          <br>
+
+          <p class="about-text">
+            My work focuses on early clinical development and
+            Phase I research, supporting sponsors from study
+            planning through clinical execution.
+          </p>
+
+        </div>
+
+      </section>
+
+
+      <!-- ASTRUM -->
+
+      <section class="astrum">
+
+        <div class="section-inner">
+
+          <div class="section-label">
+            My company
+          </div>
+
+          <h2>
+            Astrum CRO
+          </h2>
+
+          <p>
+            Clinical research services supporting pharmaceutical
+            and biotechnology companies across the drug development
+            journey.
+          </p>
+
+          <a class="astrum-button"
+             href="https://astrumcro.com"
+             target="_blank"
+             rel="noopener">
+            Explore Astrum CRO&nbsp; →
+          </a>
+
+        </div>
+
+      </section>
+
+    </main>
+
+
+    <footer>
+      Pedro Francisco · PharmD · Astrum CRO
+    </footer>
+
+  </div>
+
+</body>
+</html>
