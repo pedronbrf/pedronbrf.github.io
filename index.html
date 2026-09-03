@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedro Francisco | Astrum CRO</title>
-    <!-- Imports Professional Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Imports Montserrat (Geometric font identical to Century Gothic) -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            /* Prioritizes Century Gothic, but forces Montserrat on phones/Macs */
-            font-family: 'Century Gothic', 'Montserrat', sans-serif;
-            background-color: #F3F3F3; 
-            color: #242424; 
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Pedro Francisco, PharmD | Astrum CRO</title>
+
+  <meta
+    name="description"
+    content="Pedro Francisco, PharmD — Business Development Manager at Astrum CRO."
+  >
+
+  <meta
+    name="theme-color"
+    content="#65CAE4"
+  >
+
+
+  <style>
 
     /* =========================================================
-       ASTRUM / PERSONAL BRAND
+       COLOURS
+       Based on Astrum brand palette
        ========================================================= */
 
     :root {
-      --blue: #65CAE4;
-      --blue-dark: #336572;
-      --blue-light: #E0F4FA;
+
+      --astrum-blue: #65CAE4;
+      --astrum-blue-dark: #336572;
+      --astrum-blue-light: #E0F4FA;
 
       --charcoal: #242424;
-      --gray-dark: #555555;
-      --gray: #C7C7C7;
-      --gray-light: #F3F3F3;
+
+      --text-gray: #555555;
+      --medium-gray: #C7C7C7;
+      --light-gray: #F3F3F3;
 
       --white: #FFFFFF;
 
-      --max-width: 920px;
+      --max-width: 760px;
+
     }
 
 
@@ -51,20 +58,39 @@
       padding: 0;
     }
 
+
     html {
       scroll-behavior: smooth;
     }
 
+
     body {
-      font-family: century gothic, "century gothic", century gothic, sans-serif;
+
+      font-family:
+        "Century Gothic",
+        "Arial",
+        sans-serif;
+
       color: var(--charcoal);
+
       background: var(--white);
+
       line-height: 1.5;
+
       -webkit-font-smoothing: antialiased;
+
+      text-rendering: optimizeLegibility;
+
     }
+
 
     a {
       color: inherit;
+    }
+
+
+    img {
+      max-width: 100%;
     }
 
 
@@ -73,9 +99,13 @@
        ========================================================= */
 
     .page {
+
       width: 100%;
+
       min-height: 100vh;
+
       overflow: hidden;
+
     }
 
 
@@ -84,16 +114,29 @@
        ========================================================= */
 
     header {
+
       width: 100%;
+
       max-width: var(--max-width);
+
       margin: 0 auto;
-      padding: 24px 28px 10px;
+
+      padding:
+        20px
+        28px
+        5px;
+
     }
 
+
     .astrum-logo {
-      width: 165px;
+
+      width: 150px;
+
       height: auto;
+
       display: block;
+
     }
 
 
@@ -102,73 +145,135 @@
        ========================================================= */
 
     .hero {
+
+      width: 100%;
+
       max-width: var(--max-width);
+
       margin: 0 auto;
-      padding: 35px 28px 45px;
+
+      padding:
+        25px
+        28px
+        35px;
 
       display: grid;
-      grid-template-columns: 1fr 240px;
-      gap: 55px;
+
+      grid-template-columns:
+        1fr
+        180px;
+
+      gap: 35px;
+
       align-items: center;
+
     }
+
 
     .hero-content {
-      max-width: 600px;
+
+      max-width: 540px;
+
     }
+
 
     .eyebrow {
+
       display: inline-block;
 
-      background: var(--blue-light);
-      color: var(--blue-dark);
+      background:
+        var(--astrum-blue-light);
 
-      padding: 7px 13px;
+      color:
+        var(--astrum-blue-dark);
+
+      padding:
+        6px
+        12px;
+
       border-radius: 30px;
 
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.4px;
+      font-size: 11px;
 
-      margin-bottom: 18px;
+      font-weight: 700;
+
+      letter-spacing: 0.5px;
+
+      margin-bottom: 15px;
+
     }
+
 
     h1 {
-      font-size: clamp(42px, 6vw, 60px);
+
+      font-size:
+        clamp(38px, 5vw, 52px);
+
       line-height: 1;
-      letter-spacing: -1.8px;
+
+      letter-spacing: -1.5px;
+
       font-weight: 700;
 
-      margin-bottom: 10px;
+      margin-bottom: 9px;
+
     }
+
 
     .degree {
-      color: var(--blue-dark);
-      font-size: 17px;
+
+      color:
+        var(--astrum-blue-dark);
+
+      font-size: 16px;
+
       font-weight: 600;
-      margin-bottom: 3px;
+
+      margin-bottom: 2px;
+
     }
+
 
     .role {
-      font-size: 20px;
+
+      font-size: 19px;
+
       font-weight: 600;
+
       line-height: 1.25;
+
     }
+
 
     .company {
+
       color: #4C98AB;
-      font-size: 18px;
+
+      font-size: 17px;
+
       font-weight: 600;
+
       margin-top: 2px;
+
     }
 
+
     .intro {
-      max-width: 570px;
 
-      margin: 20px 0 25px;
+      max-width: 500px;
 
-      color: var(--gray-dark);
-      font-size: 17px;
+      margin:
+        15px
+        0
+        20px;
+
+      color:
+        var(--text-gray);
+
+      font-size: 15px;
+
       line-height: 1.55;
+
     }
 
 
@@ -177,145 +282,243 @@
        ========================================================= */
 
     .profile-wrapper {
-      width: 220px;
-      height: 220px;
+
+      width: 180px;
+
+      height: 180px;
 
       justify-self: end;
 
       border-radius: 50%;
+
       overflow: hidden;
 
-      border: 7px solid var(--blue-light);
+      border:
+        6px solid
+        var(--astrum-blue-light);
 
       box-shadow:
-        0 10px 35px rgba(36, 36, 36, 0.12);
+        0 10px 30px
+        rgba(36, 36, 36, 0.12);
+
     }
 
+
     .profile-photo {
+
       width: 100%;
+
       height: 100%;
 
       object-fit: cover;
 
-      /* Keeps the face central and naturally crops the lower
-         part of the original photograph. */
-      object-position: center 24%;
+      object-position:
+        center 24%;
 
       display: block;
+
     }
 
 
     /* =========================================================
-       ACTION BUTTONS
+       BUTTONS
        ========================================================= */
 
     .actions {
+
       display: flex;
+
       flex-wrap: wrap;
-      gap: 10px;
+
+      gap: 8px;
+
     }
 
+
     .button {
-      min-height: 46px;
+
+      min-height: 43px;
 
       display: inline-flex;
+
       align-items: center;
+
       justify-content: center;
 
-      padding: 11px 18px;
+      padding:
+        9px
+        16px;
 
       border-radius: 7px;
 
       text-decoration: none;
 
-      font-size: 15px;
+      font-size: 13px;
+
       font-weight: 700;
 
       transition:
         transform 0.15s ease,
         box-shadow 0.15s ease,
         border-color 0.15s ease;
+
+      cursor: pointer;
+
     }
+
 
     .button:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 5px 16px rgba(36, 36, 36, 0.10);
+
+      transform:
+        translateY(-1px);
+
+      box-shadow:
+        0 5px 14px
+        rgba(36, 36, 36, 0.10);
+
     }
+
 
     .primary {
-      background: var(--charcoal);
-      color: var(--white);
+
+      background:
+        var(--charcoal);
+
+      color:
+        var(--white);
+
     }
+
 
     .secondary {
-      background: var(--white);
-      color: var(--charcoal);
 
-      border: 1px solid var(--gray);
+      background:
+        var(--white);
+
+      color:
+        var(--charcoal);
+
+      border:
+        1px solid
+        var(--medium-gray);
+
     }
 
+
     .secondary:hover {
-      border-color: var(--blue);
+
+      border-color:
+        var(--astrum-blue);
+
     }
 
 
     /* =========================================================
-       FOCUS SECTION
+       GENERAL SECTIONS
+       ========================================================= */
+
+    .section-inner {
+
+      width: 100%;
+
+      max-width: var(--max-width);
+
+      margin: 0 auto;
+
+      padding:
+        31px
+        28px;
+
+    }
+
+
+    .section-label {
+
+      color:
+        #4C98AB;
+
+      font-size: 10px;
+
+      font-weight: 700;
+
+      letter-spacing: 1.7px;
+
+      text-transform: uppercase;
+
+      margin-bottom: 6px;
+
+    }
+
+
+    h2 {
+
+      font-size: 27px;
+
+      line-height: 1.15;
+
+      letter-spacing: -0.5px;
+
+      margin-bottom: 20px;
+
+    }
+
+
+    /* =========================================================
+       WHAT I WORK WITH
        ========================================================= */
 
     .focus {
-      background: var(--gray-light);
-      border-top: 1px solid #eeeeee;
-      border-bottom: 1px solid #eeeeee;
+
+      background:
+        var(--light-gray);
+
+      border-top:
+        1px solid #eeeeee;
+
+      border-bottom:
+        1px solid #eeeeee;
+
     }
 
-    .section-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 43px 28px;
-    }
-
-    .section-label {
-      color: #4C98AB;
-
-      font-size: 11px;
-      font-weight: 700;
-
-      letter-spacing: 1.6px;
-      text-transform: uppercase;
-
-      margin-bottom: 7px;
-    }
-
-    h2 {
-      font-size: 29px;
-      line-height: 1.15;
-      letter-spacing: -0.5px;
-
-      margin-bottom: 22px;
-    }
 
     .focus-grid {
+
       display: grid;
 
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns:
+        1fr
+        1fr;
 
-      gap: 10px;
+      gap: 8px;
+
     }
 
-    .focus-item {
-      background: var(--white);
 
-      padding: 17px 19px;
+    .focus-item {
+
+      background:
+        var(--white);
+
+      padding:
+        14px
+        16px;
 
       border-radius: 7px;
 
-      border-left: 4px solid var(--blue);
+      border-left:
+        4px solid
+        var(--astrum-blue);
 
-      font-size: 15px;
+      font-size: 13px;
+
       font-weight: 700;
 
-      box-shadow: 0 2px 8px rgba(36, 36, 36, 0.03);
+      line-height: 1.35;
+
+      box-shadow:
+        0 2px 7px
+        rgba(36, 36, 36, 0.03);
+
     }
 
 
@@ -324,29 +527,52 @@
        ========================================================= */
 
     .about .section-inner {
-      padding-top: 43px;
-      padding-bottom: 43px;
+
+      padding-top: 31px;
+
+      padding-bottom: 31px;
+
     }
+
 
     .about-layout {
+
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 50px;
+
+      grid-template-columns:
+        0.9fr
+        1.1fr;
+
+      gap: 42px;
+
       align-items: start;
+
     }
+
 
     .about h2 {
+
       margin-bottom: 0;
+
     }
+
 
     .about-text {
-      color: var(--gray-dark);
-      font-size: 16px;
+
+      color:
+        var(--text-gray);
+
+      font-size: 14px;
+
       line-height: 1.6;
+
     }
 
+
     .about-text + .about-text {
-      margin-top: 13px;
+
+      margin-top: 11px;
+
     }
 
 
@@ -355,57 +581,103 @@
        ========================================================= */
 
     .astrum {
-      background: var(--blue-light);
+
+      background:
+        var(--astrum-blue-light);
+
     }
+
 
     .astrum .section-inner {
+
       text-align: center;
-      padding-top: 38px;
-      padding-bottom: 38px;
+
+      padding:
+        27px
+        28px;
+
     }
+
 
     .astrum-logo-small {
-      width: 145px;
+
+      width: 130px;
+
       height: auto;
-      margin: 0 auto 15px;
+
+      margin:
+        0
+        auto
+        13px;
+
+      display: block;
+
     }
+
 
     .astrum-description {
-      max-width: 720px;
 
-      margin: 0 auto 21px;
+      max-width: 680px;
 
-      color: #40545A;
+      margin:
+        0
+        auto
+        18px;
 
-      font-size: 16px;
+      color:
+        #40545A;
+
+      font-size: 13px;
+
       line-height: 1.55;
+
     }
 
+
     .astrum-button {
+
       display: inline-flex;
+
       align-items: center;
+
       justify-content: center;
 
-      min-height: 45px;
+      min-height: 42px;
 
-      padding: 10px 21px;
+      padding:
+        9px
+        19px;
 
-      background: var(--charcoal);
-      color: var(--white);
+      background:
+        var(--charcoal);
+
+      color:
+        var(--white);
 
       border-radius: 7px;
 
       text-decoration: none;
 
-      font-size: 15px;
+      font-size: 13px;
+
       font-weight: 700;
 
-      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+
     }
 
+
     .astrum-button:hover {
-      transform: translateY(-1px);
-      box-shadow: 0 5px 16px rgba(36, 36, 36, 0.12);
+
+      transform:
+        translateY(-1px);
+
+      box-shadow:
+        0 5px 14px
+        rgba(36, 36, 36, 0.12);
+
     }
 
 
@@ -414,171 +686,348 @@
        ========================================================= */
 
     footer {
+
       text-align: center;
 
-      padding: 20px;
+      padding:
+        16px
+        20px;
 
-      color: #888888;
+      color:
+        #888888;
 
-      font-size: 12px;
+      font-size: 10px;
+
     }
 
 
     /* =========================================================
-       MOBILE
+       TABLET / MOBILE
        ========================================================= */
 
     @media (max-width: 700px) {
 
+
       header {
-        padding: 20px 20px 5px;
+
+        padding:
+          18px
+          20px
+          3px;
+
       }
+
 
       .astrum-logo {
-        width: 135px;
+
+        width: 130px;
+
       }
+
 
       .hero {
-        padding: 25px 20px 38px;
+
+        padding:
+          22px
+          20px
+          35px;
 
         display: flex;
+
         flex-direction: column-reverse;
 
-        gap: 24px;
+        gap: 21px;
 
         text-align: center;
+
       }
+
 
       .hero-content {
+
         max-width: 100%;
+
       }
 
+
       .profile-wrapper {
+
         width: 155px;
+
         height: 155px;
 
         align-self: center;
 
         border-width: 5px;
+
       }
+
 
       .eyebrow {
-        font-size: 12px;
-        margin-bottom: 14px;
+
+        font-size: 10px;
+
+        padding:
+          6px
+          11px;
+
+        margin-bottom: 13px;
+
       }
+
 
       h1 {
-        font-size: 43px;
-        letter-spacing: -1.3px;
+
+        font-size: 42px;
+
+        letter-spacing: -1.2px;
+
       }
+
 
       .degree {
-        font-size: 16px;
+
+        font-size: 15px;
+
       }
+
 
       .role {
-        font-size: 18px;
+
+        font-size: 17px;
+
       }
+
 
       .company {
-        font-size: 17px;
+
+        font-size: 16px;
+
       }
+
 
       .intro {
-        font-size: 16px;
-        margin: 16px auto 20px;
-        max-width: 440px;
+
+        font-size: 14px;
+
+        max-width: 430px;
+
+        margin:
+          14px
+          auto
+          18px;
+
       }
+
 
       .actions {
+
         justify-content: center;
+
         max-width: 430px;
+
         margin: 0 auto;
+
+        gap: 7px;
+
       }
+
 
       .button {
-        flex: 1 1 45%;
-        min-height: 45px;
-        padding: 10px 13px;
-        font-size: 14px;
+
+        flex:
+          1 1 30%;
+
+        min-height: 43px;
+
+        padding:
+          9px
+          10px;
+
+        font-size: 12px;
+
       }
+
 
       .section-inner {
-        padding: 35px 20px;
+
+        padding:
+          30px
+          20px;
+
       }
+
+
+      .section-label {
+
+        font-size: 9px;
+
+      }
+
 
       h2 {
-        font-size: 26px;
+
+        font-size: 25px;
+
+        margin-bottom: 18px;
+
       }
+
 
       .focus-grid {
-        grid-template-columns: 1fr;
-        gap: 8px;
+
+        grid-template-columns:
+          1fr;
+
+        gap: 7px;
+
       }
+
 
       .focus-item {
-        padding: 15px 16px;
-        font-size: 15px;
+
+        padding:
+          14px
+          15px;
+
+        font-size: 13px;
+
       }
 
-      .about-layout {
-        grid-template-columns: 1fr;
-        gap: 15px;
-      }
 
       .about .section-inner {
-        padding-top: 35px;
-        padding-bottom: 35px;
+
+        padding-top: 30px;
+
+        padding-bottom: 30px;
+
       }
+
+
+      .about-layout {
+
+        grid-template-columns:
+          1fr;
+
+        gap: 13px;
+
+      }
+
 
       .about h2 {
+
         margin-bottom: 0;
+
       }
+
+
+      .about-text {
+
+        font-size: 13px;
+
+      }
+
 
       .astrum .section-inner {
-        padding: 32px 20px;
+
+        padding:
+          27px
+          20px;
+
       }
+
+
+      .astrum-logo-small {
+
+        width: 120px;
+
+      }
+
 
       .astrum-description {
-        font-size: 15px;
+
+        font-size: 12.5px;
+
+        max-width: 450px;
+
       }
 
-      footer {
-        padding: 17px;
+
+      .astrum-button {
+
+        min-height: 42px;
+
+        padding:
+          9px
+          18px;
+
+        font-size: 12px;
+
       }
+
+
+      footer {
+
+        padding:
+          15px;
+
+      }
+
     }
 
 
     /* =========================================================
-       SMALL PHONES
+       VERY SMALL PHONES
        ========================================================= */
 
     @media (max-width: 380px) {
 
+
       .profile-wrapper {
+
         width: 135px;
+
         height: 135px;
+
       }
+
 
       h1 {
+
         font-size: 38px;
+
       }
+
 
       .intro {
-        font-size: 15px;
+
+        font-size: 13px;
+
       }
 
+
       .button {
+
         flex-basis: 100%;
+
+      }
+
+
+      .actions {
+
+        max-width: 280px;
+
       }
 
     }
 
   </style>
+
 </head>
 
 
 <body>
+
 
 <div class="page">
 
@@ -590,7 +1039,7 @@
   <header>
 
     <img
-      src="astrum-logo.jpg"
+      src="astrum-logo.png"
       alt="Astrum CRO"
       class="astrum-logo"
     >
@@ -598,35 +1047,44 @@
   </header>
 
 
-  <!-- =======================================================
-       HERO
-       ======================================================= -->
 
   <main>
 
+
+    <!-- =====================================================
+         HERO
+         ===================================================== -->
+
     <section class="hero">
 
+
       <div class="hero-content">
+
 
         <div class="eyebrow">
           Clinical Research &amp; Business Development
         </div>
 
+
         <h1>
           Pedro Francisco
         </h1>
+
 
         <div class="degree">
           PharmD
         </div>
 
+
         <div class="role">
           Business Development Manager
         </div>
 
+
         <div class="company">
           Astrum CRO
         </div>
+
 
         <p class="intro">
           Connecting pharmaceutical and biotechnology companies
@@ -634,9 +1092,12 @@
         </p>
 
 
-        <!-- ACTIONS -->
+        <!-- CONTACT ACTIONS -->
 
         <div class="actions">
+
+
+          <!-- SAVE CONTACT -->
 
           <a
             class="button primary"
@@ -646,6 +1107,8 @@
             +&nbsp; Save Contact
           </a>
 
+
+          <!-- LINKEDIN -->
 
           <a
             class="button secondary"
@@ -657,16 +1120,21 @@
           </a>
 
 
+          <!-- EMAIL -->
+
           <a
             class="button secondary"
-            href="mailto:pedro.francisco@astrumcro.com"
+            href="mailto:pedro.francisco@astrucro.com"
           >
             Email
           </a>
 
+
         </div>
 
+
       </div>
+
 
 
       <!-- PROFILE PHOTO -->
@@ -674,12 +1142,13 @@
       <div class="profile-wrapper">
 
         <img
-          src="profile.png"
+          src="profile.jpg"
           alt="Pedro Francisco"
           class="profile-photo"
         >
 
       </div>
+
 
     </section>
 
@@ -691,11 +1160,14 @@
 
     <section class="focus">
 
+
       <div class="section-inner">
+
 
         <div class="section-label">
           What I work with
         </div>
+
 
         <h2>
           Clinical Development
@@ -704,25 +1176,32 @@
 
         <div class="focus-grid">
 
+
           <div class="focus-item">
             Phase I &amp; Clinical Pharmacology
           </div>
+
 
           <div class="focus-item">
             Phase II–III Clinical Trials
           </div>
 
+
           <div class="focus-item">
             Clinical Development &amp; Scientific Advice
           </div>
+
 
           <div class="focus-item">
             RWE, Late Phase Clinical Services
           </div>
 
+
         </div>
 
+
       </div>
+
 
     </section>
 
@@ -734,45 +1213,71 @@
 
     <section class="about">
 
+
       <div class="section-inner">
+
 
         <div class="about-layout">
 
+
           <div>
+
 
             <div class="section-label">
               About
             </div>
 
+
             <h2>
-              Connecting development<br>
+              Connecting development
               programs with expertise.
             </h2>
+
 
           </div>
 
 
           <div>
 
+
             <p class="about-text">
+
               I am a PharmD and Business Development Manager at
               Astrum CRO, working with pharmaceutical and
               biotechnology companies across the clinical
               development landscape.
+
             </p>
 
+
             <p class="about-text">
-              My focus is on understanding development needs and
-              connecting sponsors with the right clinical research
-              capabilities — from early clinical development and
-              Phase I through later-stage clinical services.
+
+              My role is focused on understanding development
+              needs and connecting sponsors with the right
+              clinical research capabilities across different
+              stages of the development journey.
+
             </p>
+
+
+            <p class="about-text">
+
+              While Phase I and Clinical Pharmacology are a key
+              area of focus, my work spans early and later-stage
+              clinical development, including Phase II–III,
+              late-phase services and RWE.
+
+            </p>
+
 
           </div>
 
+
         </div>
 
+
       </div>
+
 
     </section>
 
@@ -784,19 +1289,24 @@
 
     <section class="astrum">
 
+
       <div class="section-inner">
 
+
         <img
-          src="astrum-logo.jpg"
+          src="astrum-logo.png"
           alt="Astrum CRO"
           class="astrum-logo-small"
         >
 
 
         <p class="astrum-description">
-          Full-service CRO delivering Phase I–IV clinical development
-          and RWE, supported by our 64-bed hospital-based Phase I Unit
-          in Porto and operational expertise across Europe and beyond.
+
+          Full-service CRO delivering Phase I–IV clinical
+          development and RWE, supported by our 64-bed
+          hospital-based Phase I Unit in Porto and operational
+          expertise across Europe and beyond.
+
         </p>
 
 
@@ -809,9 +1319,12 @@
           Visit Astrum CRO&nbsp; →
         </a>
 
+
       </div>
 
+
     </section>
+
 
   </main>
 
@@ -822,7 +1335,9 @@
        ======================================================= -->
 
   <footer>
+
     Pedro Francisco · PharmD · Astrum CRO
+
   </footer>
 
 
@@ -831,12 +1346,13 @@
 
 
 <!-- =========================================================
-     SAVE CONTACT FUNCTION
+     SAVE CONTACT / VCARD
      ========================================================= -->
 
 <script>
 
 function saveContact() {
+
 
   const vcard =
 `BEGIN:VCARD
@@ -845,34 +1361,51 @@ FN:Pedro Francisco
 N:Francisco;Pedro;;;
 ORG:Astrum CRO
 TITLE:Business Development Manager
-EMAIL;TYPE=WORK:pedro.francisco@astrumcro.com
+EMAIL;TYPE=WORK:pedro.francisco@astrucro.com
 URL:https://www.linkedin.com/in/pedrofranciscobrf
-URL:https://astrumcro.com
+NOTE:PharmD | Business Development Manager | Astrum CRO
 END:VCARD`;
+
 
   const blob = new Blob(
     [vcard],
-    { type: "text/vcard;charset=utf-8" }
+    {
+      type: "text/vcard;charset=utf-8"
+    }
   );
 
-  const url = URL.createObjectURL(blob);
 
-  const link = document.createElement("a");
+  const url =
+    URL.createObjectURL(blob);
+
+
+  const link =
+    document.createElement("a");
+
 
   link.href = url;
-  link.download = "Pedro_Francisco.vcf";
+
+
+  link.download =
+    "Pedro_Francisco.vcf";
+
 
   document.body.appendChild(link);
 
+
   link.click();
+
 
   document.body.removeChild(link);
 
+
   URL.revokeObjectURL(url);
+
 }
 
 </script>
 
 
 </body>
+
 </html>
